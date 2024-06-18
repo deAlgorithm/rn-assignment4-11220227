@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View,Image, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 const SearchBar = () => (
@@ -12,7 +12,7 @@ const SearchBar = () => (
             />
         </View>
         <TouchableOpacity style={styles.filterIcon}>
-            <Ionicons name="filter" size={20} color="#356899" />
+            <Image source={{ uri: 'https://img.icons8.com/?size=100&id=awV5wdoQCBuZ&format=png&color=000000' }} style={{ width: 30, height: 30 }} />
         </TouchableOpacity>
     </View>
 );
@@ -45,7 +45,9 @@ const styles = StyleSheet.create({
         fontSize:15,
     },
     filterIcon: {
-        padding: 15,
+        padding: 10,
+        height:50,
+        width:50,
         backgroundColor:'#F2F2F3',
         borderRadius:15,
     },

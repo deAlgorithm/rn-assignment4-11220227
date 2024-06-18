@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         padding: 20,
         margin: 5,
-        width: 300,
-        height: 200,
+        width: 280,
+        height: 180,
         elevation: 2,
         flexDirection: 'column',
         justifyContent:'space-between',
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     
     jobCompany: {
         fontSize: 14,
-        color: 'feeefe',
+        color: 'white',
     },
     jobDetails: {
         flexDirection: 'row',

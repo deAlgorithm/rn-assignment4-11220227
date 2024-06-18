@@ -13,23 +13,25 @@ const PopularJobs = ({ jobs }) => (
         <FlatList
             data={jobs}
             renderItem={({ item }) => <JobsCard job={item} />}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item) => item.id.toString()}
+            showsVerticalScrollIndicator={false} // Hide the vertical scroll indicator
         />
     </View>
 );
 
 const styles = StyleSheet.create({
     popularJobs: {
+        flex: 1, // Ensure the container uses the full available space
         padding: 15,
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginBottom: 20, // Add margin to separate header from the list
     },
     sectionTitle: {
         fontSize: 20,
-        marginBottom: 20,
         fontWeight: 'bold',
     },
     seeAll: {
@@ -37,7 +39,6 @@ const styles = StyleSheet.create({
         textAlign: 'right',
         fontSize: 13,
     },
- 
 });
 
 export default PopularJobs;
