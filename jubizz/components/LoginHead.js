@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
 
-const LoginHead = () => {
+const LoginHead = ({ onLogin }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Jobizz</Text>
@@ -19,7 +19,7 @@ const LoginHead = () => {
                     placeholder="Email"
                     keyboardType="email-address"
                 />
-                <TouchableOpacity style={styles.button} onPress={() => {}}>
+                <TouchableOpacity style={styles.button} onPress={onLogin}>
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
             </View>
@@ -45,6 +45,7 @@ const LoginHead = () => {
             <Text style={styles.registerText}>
                 Haven’t an account? <Text style={styles.registerLink}>Register</Text>
             </Text>
+            
         </View>
     );
 };

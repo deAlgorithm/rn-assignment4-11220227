@@ -12,7 +12,7 @@ const User = () => {
             <Head
                 name="OTABIL ISHAQUE"
                 email="ishaqueotabill44@gmail.com"
-                avatar="https://lh3.googleusercontent.com/a/AEdFTp5kp2v9mR_0ZFHCEnj10I9GNuiH09bdCxUq1Gq_KA=s96-c" // Replace with the actual image URL
+                avatar="https://media.licdn.com/dms/image/D4D03AQHV4e812MZtUA/profile-displayphoto-shrink_100_100/0/1718264970727?e=1724284800&v=beta&t=0MgQzxtmqnnkrO0FCMWZkfQVkJPPnGfcoWyaf8vRvLU"
       />
             <SearchBar />
             <FeaturedJobs jobs={featuredJobs} />

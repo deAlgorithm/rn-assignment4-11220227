@@ -1,14 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, SafeAreaView } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import User from './components/User';
 import LoginHead from './components/LoginHead';
 
 export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      {/* <LoginHead/> */}
-      <User />
+      {isLoggedIn ? <User /> : <LoginHead onLogin={handleLogin} />}
       <StatusBar style="auto" />
     </SafeAreaView>
   );

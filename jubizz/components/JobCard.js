@@ -23,7 +23,6 @@ const JobCard = ({ job }) => (
 
 const styles = StyleSheet.create({
     jobCard: {
-        backgroundColor: '#5386e4',
         borderRadius: 30,
         padding: 20,
         margin: 5,
@@ -32,6 +31,7 @@ const styles = StyleSheet.create({
         elevation: 2,
         flexDirection: 'column',
         justifyContent:'space-between',
+        backgroundColor:'white'
     },
     jobItem:{
         flexDirection: 'row',
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
     jobTitle: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#fff'
+        color: '#271C09'
     },
     
     jobCompany: {
         fontSize: 14,
-        color: 'white',
+        color: '#271C09',
     },
     jobDetails: {
         flexDirection: 'row',
@@ -73,11 +73,11 @@ const styles = StyleSheet.create({
     jobSalary: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'white',
+        color: '#271C09',
     },
     jobLocation: {
         fontSize: 18,
-        color: 'white',
+        color: '#FFC300',
     },
 });
 
